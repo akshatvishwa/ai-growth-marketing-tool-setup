@@ -2,13 +2,23 @@
 
 ## Project Overview
 
-This repository documents the first step of my portfolio project for the Junior Growth Marketing Specialist application at 100Hires.
+This repository documents my portfolio project for the Junior Growth Marketing Specialist application at 100Hires.
 
-The objective of this task was to install and explore the required AI-assisted work tools, create a public GitHub repository, and document the process clearly.
+The project started with setting up AI-assisted work tools such as Cursor, Claude Code, Codex, and GitHub. It then expanded into a research project on **AI-powered SEO content production for B2B SaaS**.
 
-The focus of this task was not only installation, but also the ability to follow instructions, learn independently, troubleshoot issues, and present the work in a structured way.
+The goal of this repository is to demonstrate that I can:
+
+* follow instructions carefully
+* learn new tools independently
+* troubleshoot technical issues
+* use AI-assisted workflows
+* collect and organize research
+* document work clearly
+* synthesize research into practical marketing insights
 
 ---
+
+# Step 1: AI Tool Setup
 
 ## Tools Used
 
@@ -21,7 +31,7 @@ Purpose:
 * To explore an AI-native work environment
 * To understand how modern AI tools can support project execution
 * To manage project files and documentation
-* To create and edit this README.md file
+* To create and edit project files
 
 ---
 
@@ -70,7 +80,7 @@ Repository purpose:
 
 ---
 
-## Steps Completed
+## Step 1 Work Completed
 
 1. Installed Cursor IDE.
 2. Opened Cursor and explored the main interface.
@@ -136,12 +146,12 @@ How I handled it:
 
 * I created a public GitHub repository.
 * I added a README.md file.
-* I used GitHub's editor to document the work clearly.
+* I used GitHub's editor and Cursor to document the work clearly.
 * I treated the task as a practical learning exercise.
 
 ---
 
-## What I Learned
+## Step 1 Learnings
 
 This task helped me understand the basics of working with AI-assisted tools and GitHub documentation.
 
@@ -152,21 +162,192 @@ Key learnings:
 * How to search for AI tools inside Cursor
 * How to document issues clearly instead of ignoring them
 * How to create a public GitHub repository
-* How to edit a README.md file
+* How to edit and organize a README.md file
 * How to present a technical setup process in a structured way
 
 From a growth marketing perspective, this workflow is useful because modern growth roles increasingly require comfort with AI tools, documentation, experimentation, and fast independent learning.
 
 ---
 
-## Current Status
+# Step 2: Research Project
 
-The required setup process has been completed and documented in this repository.
+## Topic Chosen
 
-I was able to:
+**AI-powered SEO content production for B2B SaaS**
 
-* Install and open Cursor
-* Find Claude Code inside Cursor
-* Find Codex 5.3 as a New Agent with Model option
-* Create a public GitHub repository
-* Create and document the README.md file
+---
+
+## Why I Chose This Topic
+
+I chose this topic because B2B SaaS SEO is changing quickly.
+
+Search is no longer limited to ranking blog posts on Google. Buyers now discover and evaluate brands across Google Search, AI Overviews, ChatGPT, Gemini, Perplexity, YouTube, LinkedIn, Reddit, review sites, comparison pages, communities, newsletters, podcasts, and third-party sources.
+
+The goal of this research project is to understand how modern SEO and content teams can build AI-visible content systems that support business outcomes, not just traffic.
+
+---
+
+## Research Thesis
+
+B2B SaaS SEO is shifting from keyword-only content production to AI-visible content systems built around:
+
+* expert insight
+* audience research
+* prompt research
+* content quality
+* topical authority
+* off-site visibility
+* E-E-A-T
+* third-party citations
+* AI visibility measurement
+* business impact beyond traffic
+
+---
+
+## Experts Researched
+
+This project includes research from 10 experts:
+
+1. Kevin Indig
+2. Aleyda Solis
+3. Ryan Law
+4. Eli Schwartz
+5. Ross Simmonds
+6. Bernard Huang
+7. Mike King
+8. Amanda Natividad
+9. Alex Birkett
+10. Lily Ray
+
+---
+
+## Research Structure
+
+The research is organized inside the `research/` folder.
+
+### Core Research Files
+
+* `research/sources.md` — expert list, topic thesis, and collection summary
+* `research/source-quality-scorecard.md` — scoring and reasoning for expert selection
+* `research/collection-method.md` — how sources were collected and organized
+* `research/patterns-and-insights.md` — synthesis of patterns across all sources
+
+---
+
+### LinkedIn Research Notes
+
+Five LinkedIn expert files were collected manually because LinkedIn API access is limited:
+
+* `research/linkedin-posts/kevin-indig.md`
+* `research/linkedin-posts/aleyda-solis.md`
+* `research/linkedin-posts/ryan-law.md`
+* `research/linkedin-posts/ross-simmonds.md`
+* `research/linkedin-posts/amanda-natividad.md`
+
+These files summarize selected LinkedIn posts, including:
+
+* source links
+* topic summaries
+* tactical takeaways
+* B2B SaaS relevance
+* AI SEO/content relevance
+* risks and limitations
+* future playbook use cases
+
+---
+
+### YouTube Transcript Notes
+
+Five YouTube transcript-note files were created:
+
+* `research/youtube-transcripts/eli-schwartz.md`
+* `research/youtube-transcripts/bernard-huang.md`
+* `research/youtube-transcripts/mike-king.md`
+* `research/youtube-transcripts/alex-birkett.md`
+* `research/youtube-transcripts/lily-ray.md`
+
+These files summarize YouTube videos and interviews related to SEO, AI search, AEO/GEO, E-E-A-T, B2B SaaS content strategy, and AI visibility.
+
+---
+
+## API / Technical Collection Workflow
+
+To support the YouTube research workflow, I created a Python transcript collection script:
+
+* `tools/youtube_transcript_collector.py`
+
+The script uses:
+
+* `youtube-transcript-api`
+
+The dependency is listed in:
+
+* `requirements.txt`
+
+The script accepts a YouTube URL or video ID, extracts the video ID, fetches the English transcript where available, and saves the transcript locally inside:
+
+* `research/youtube-transcripts/raw/`
+
+Raw transcript files were not republished in full. Instead, I created structured research notes summarizing the relevant ideas, tactical takeaways, B2B SaaS relevance, AI SEO relevance, risks, and future playbook use cases.
+
+A `.gitignore` file was added inside the raw transcript folder to avoid accidentally committing full transcript text.
+
+---
+
+## Key Research Output
+
+The main synthesis file is:
+
+* `research/patterns-and-insights.md`
+
+This file identifies:
+
+* key patterns across all experts
+* areas of agreement
+* differences between experts
+* implications for B2B SaaS teams
+* practical frameworks
+* open questions and limitations
+* a future playbook outline
+
+---
+
+## Main Research Insight
+
+The strongest pattern from this research is that AI-powered SEO content production is not about replacing writers with AI.
+
+It is about building a better system for:
+
+* understanding buyers
+* mapping prompts
+* creating expert-led content
+* earning trust across third-party sources
+* measuring AI visibility
+* improving representation accuracy
+* connecting SEO to business outcomes
+
+For B2B SaaS, the winning teams will not be the ones that publish the most AI-generated articles. The winning teams will be the ones that use AI to build more useful, more trusted, more visible, and more strategically distributed content systems.
+
+---
+
+# Current Status
+
+The project currently includes:
+
+* Cursor, Claude Code, Codex, and GitHub setup documentation
+* 10 selected experts
+* 5 LinkedIn research files
+* 5 YouTube transcript-note files
+* YouTube transcript collector script
+* Requirements file for the transcript tool
+* Source quality scorecard
+* Collection method documentation
+* Cross-source research synthesis
+
+The core research collection phase is complete.
+
+---
+
+# Next Step
+
+The next step would be to turn the research synthesis into a practical playbook for B2B SaaS teams on AI-powered SEO content production.
